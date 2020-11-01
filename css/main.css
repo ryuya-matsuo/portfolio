@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body {
+    background-color: #FFF7F7;
+    color: #204969;
+    width: 375px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+}
+
+/* 🍔start */
+/* クリック前 */
+.nav-toggle {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: auto;
+}
+
+.nav-toggle i {
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #204969;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+
+/* 三本線の容姿指定 */
+.nav-toggle i:nth-child(1) {
+    top: 20px;
+    right: 15px;
+}
+
+.nav-toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    margin: auto;
+}
+
+.nav-toggle i:nth-child(3) {
+    bottom: 20px;
+    right: 15px;
+}
+
+/* クリック後 show追加 */
+.nav-toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.nav-toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.show i:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+}
+
+/* クリック前メニューリスト */
+.nav {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+}
+
+.nav ul {
+    text-decoration: none;
+}
+
+.nav ul li {
+    text-decoration: none;
+}
+
+/* クリック後　show追加 */
+.nav.show {
+    opacity: 1;
+    visibility: visible;
+}
+/* 🍔end */
