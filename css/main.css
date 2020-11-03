@@ -1,8 +1,19 @@
 @charset "UTF-8";
 body {
-    background-color: #FFF7F7;
-    color: #204969;
-    width: 375px;
+    margin: 0 auto;
+    color: #333333;
+}
+
+/* ヘッダー */
+#home {
+    background-image: url(../image/home.jpeg);
+    height: 600px;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -72,6 +83,8 @@ header {
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s, visibility .5s;
+    text-align: center;
+    background-color: #F2F9F8;
 }
 
 .nav ul {
@@ -79,7 +92,13 @@ header {
 }
 
 .nav ul li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.nav ul li a {
     text-decoration: none;
+    color: #204969;
 }
 
 /* クリック後　show追加 */
@@ -88,3 +107,11 @@ header {
     visibility: visible;
 }
 /* 🍔end */
+
+#home h1 {
+    font-size: 40px;
+}
+
+#home p {
+    font-size: 17px;
+}
