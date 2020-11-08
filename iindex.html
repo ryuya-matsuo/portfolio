@@ -21,35 +21,40 @@
             <div class="nav-toggle">
                 <i></i>
                 <i></i>
+                <i></i>
             </div>
             <nav class="nav">
-                <ul class="nav-menu-ul">
-                    <li class="nav-manu-li"><a href="#">ABOUT</a></li>
-                    <li class="nav-manu-li"><a href="#">SKILLS</a></li>
-                    <li class="nav-manu-li"><a href="#">PORTFOLIO</a></li>
-                    <li class="nav-manu-li"><a href="#">CONTACT</a></li>
+                <ul class="nav-menu">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SKILLS</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <ul class="nav-sns">
+                    <li><i class="far fa-envelope fa-lg"></i></li>
+                    <li><i class="fab fa-twitter fa-lg"></i></li>
+                    <li><i class="fab fa-instagram fa-lg"></i></li>
                 </ul>
             </nav>
         </header>
         <div class="title">
-            <h1>Ryuya's<br>Portfolio</h1>
+            <h1>Ryuya's<br>Profile</h1>
             <p>ようこそ、<br>はじめまして。</p>
         </div>
     </div>
 
     <!-- メイン -->
     <div id="main">
-        <div id="about-wrapper">
+        <div id="about-wrapper" class="wrapper">
             <h2>ABOUT</h2>
             <p>私について</p>
             <img src="./image/face.jpeg" alt="顔写真">
             <div class="about-message">
                 <p>はじめまして、松尾龍哉と申します。<br>現在、東京都庁で土木技術者として働いている傍ら、Web制作の勉強をしております。</p>
-                <p>2000年：福岡県みやま市出身<br>2018年：福岡県立八女工業高等学校卒業</p>
-                <p>プログラミングスクールTechAcademyの「フロントエンドコース」を１ヶ月で修了</p>
+                <p>プログラミングスクールTechAcademyの「フロントエンドコース」を１ヶ月で修了。</p>
             </div>
         </div>
-        <div id="skills-wrapper">
+        <div id="skills-wrapper" class="wrapper">
             <h2>SKILLS</h2>
             <p>できること</p>
             <div class="skills">
@@ -71,15 +76,21 @@
                 </div>
             </div>
         </div>
-        <div id="portfolio-wrapper">
+        <div id="portfolio-wrapper" class="wrapper">
             <h2>PORTFOLIO</h2>
             <p>作ったもの</p>
             <div>comming soon...</div>
         </div>
-        <div id="contact-wrapper">
+        <div id="contact-wrapper" class="wrapper">
             <h2>CONTACT</h2>
             <p>お問い合わせ</p>
-            <form action="#">
+            <div>
+                <p><a href="#">メールでのお問い合わせ</a></p>
+                <p><a href="#">tiwtter</a></p>
+                <p><a href="#">instagram</a></p>
+            </div>
+
+            <!-- <form action="#">
                 <div>
                     <p>お名前</p>
                     <input type="text">
@@ -95,34 +106,34 @@
                 <div>
                     <input type="submit">
                 </div>
-            </form>
+            </form> -->
         </div>
     </div>
 
     <!-- フッター -->
     <footer>
-        <div class="footer">
+        <div class="footer wrapper">
             <p><small>&copy; 2020 All Right Reserved.</small></p>
         </div>
     </footer>
 
     <!-- コンテンツ -->
-    <!-- まずjQuery -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <!-- Waypoints.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
 
+    <!-- Waypoints.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script> -->
+
     <!-- Popper.js, 次に Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
     <!-- Vue.js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/vue-gallery.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/vue-gallery.js"></script> -->
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>

@@ -2,6 +2,7 @@
 body {
     margin: 0 auto;
     color: #333333;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 /* ヘッダー */
@@ -29,6 +30,7 @@ header {
     position: relative;
     width: 60px;
     height: 60px;
+    position: fixed;
 }
 
 .nav-toggle i {
@@ -42,47 +44,63 @@ header {
 
 /* 二本線の容姿指定 */
 .nav-toggle i:nth-child(1) {
-    top: 25px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
 }
 
 .nav-toggle i:nth-child(2) {
-    bottom: 25px;
-    right: 15px;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+}
+
+.nav-toggle i:nth-child(3) {
+    right: 20px;
+    bottom: 20px;
 }
 
 /* クリック後 show追加 */
+.nav-toggle.show {
+    position: fixed;
+    z-index: 10000;
+}
 .nav-toggle.show i:nth-child(1) {
-    transform: translateY(5px) rotate(-45deg);
+    transform: translateY(10px) rotate(-45deg);
 }
 
 .nav-toggle.show i:nth-child(2) {
-    /* opacity: 0; */
-    transform: translateY(-5px) rotate(45deg);
+    opacity: 0;
+}
+
+.nav-toggle.show i:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
 }
 
 /* クリック前メニューリスト */
 .nav {
     position: fixed;
-    top: 3rem;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 1rem;
+    padding: 20%;
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s, visibility .5s;
     text-align: center;
-    background-color: #F2F9F8;
+    background-color: #FFFFFF;
 }
 
 .nav ul {
     text-decoration: none;
 }
 
-.nav ul li {
+.nav .nav-menu li {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .nav ul li a {
@@ -90,8 +108,27 @@ header {
     color: #333333;
 }
 
+/* .nav-sns {
+    display: flex;
+    justify-content: center;
+} */
+
+.nav-sns li {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    height: 30px;
+    width: 180px;
+    line-height: 30px;
+    border: 2px solid;
+    border-color: #333333;
+    border-radius: 9vw;
+    margin: 0 auto 20px auto;
+}
+
 /* クリック後　show追加 */
 .nav.show {
+    top: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -109,4 +146,139 @@ header {
 
 #home p {
     font-size: 17px;
+}
+
+/* メイン */
+/* 共通 */
+.wrapper {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.wrapper > p {
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* about */
+#about-wrapper {
+    background-color: #F2F9F8;
+}
+
+#about-wrapper img {
+    height: 170px;
+    width: 170px;
+    border: 2px solid;
+    border-color: #333333;
+    border-radius: 50%;
+    margin-bottom: 35px;
+}
+
+.about-message p {
+    font-size: 16px;
+    display: inline-block;
+    width: 300px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* skills */
+#skills-wrapper {
+    background-color: #F2F9F8;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    height: 170px;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    background-color: #FFFFFF;
+    border: 2px solid;
+    border-color: #333333;
+    border-radius: 10%;
+}
+
+/* portfolio */
+#portfolio-wrapper {
+    background-color: #F2F9F8;
+}
+
+#portfolio-wrapper > div {
+    height: 160px;
+    width: 314px;
+    line-height: 160px;
+    background-color: #FFFFFF;
+    border: 2px solid;
+    border-color: #333333;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* contact */
+#contact-wrapper {
+    background-color: #E9F3F1;
+}
+
+/* #contact-wrapper form {
+    width: 202px;
+    margin: 0 auto;
+}
+
+#contact-wrapper form p {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#contact-wrapper form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#contact-wrapper form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+} */
+
+#contact-wrapper div {
+    width: 314px;
+    margin: 0 auto;
+}
+
+#contact-wrapper div p a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333333;
+    background-color: #FFFFFF;
+    padding: 19px 0;
+    margin-bottom: 30px;
+    border: 2px solid;
+    border-color: #333333;
+    border-radius: 9vw;
+}
+
+/* フッター */
+.footer {
+    background-color: #E9F3F1;
+    padding-bottom: 30px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.footer > p {
+    margin: 0;
 }
