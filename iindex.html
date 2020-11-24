@@ -16,104 +16,135 @@
 
 <body>
     <!-- ヘッダー -->
-    <div id="home" class="big-bg">
-        <header>
-            <div class="nav-toggle">
-                <i></i>
-                <i></i>
-                <i></i>
-            </div>
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SKILLS</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-                <ul class="nav-sns">
-                    <li><i class="far fa-envelope fa-lg"></i></li>
-                    <li><i class="fab fa-twitter fa-lg"></i></li>
-                    <li><i class="fab fa-instagram fa-lg"></i></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="title">
-            <h1>Ryuya's<br>Profile</h1>
-            <p>ようこそ、<br>はじめまして。</p>
-        </div>
-    </div>
+    <header>
+        <p>ようこそ、はじめまして。</p>
+        <h1>Ryuya Matsuo</h1>
+    </header>
 
     <!-- メイン -->
     <div id="main">
-        <div id="about-wrapper" class="wrapper">
-            <h2>ABOUT</h2>
-            <p>私について</p>
-            <img src="./image/face.jpeg" alt="顔写真">
-            <div class="about-message">
-                <p>はじめまして、松尾龍哉と申します。<br>現在、東京都庁で土木技術者として働いている傍ら、Web制作の勉強をしております。</p>
-                <p>プログラミングスクールTechAcademyの「フロントエンドコース」を１ヶ月で修了。</p>
-            </div>
-        </div>
-        <div id="skills-wrapper" class="wrapper">
-            <h2>SKILLS</h2>
-            <p>できること</p>
-            <div class="skills">
-                <div class="skill">
-                    <img src="./image/html.jpeg" alt="言語イメージ写真">
-                    <p>Level : ★★★★☆</p>
+        <section>
+            <div class="main-visual"></div>
+        </section>
+        <section>
+            <div id="consept" class="wrapper">
+                <!-- title-contentのcssは共通 -->
+                <div class="title-content">
+                    <h2 class="title">CONSEPT</h2>
+                    <p class="supplementary-title">大事なこと</p>
                 </div>
-                <div class="skill">
-                    <img src="./image/css.jpeg" alt="言語イメージ写真">
-                    <p>Level : ★★★★☆</p>
-                </div>
-                <div class="skill">
-                    <img src="./image/js.jpeg" alt="言語イメージ写真">
-                    <p>Level : ★★★★☆</p>
-                </div>
-                <div class="skill">
-                    <img src="./image/github.jpeg" alt="言語イメージ写真">
-                    <p>Level : ★★★★☆</p>
+                <div>
+                    <h3 class="consept-title">「 学ぶ姿勢 」</h3>
+                    <p class="consept-message">
+                        常に「学ぶ」ことを意識し、
+                        <br>
+                        自己研磨に努めています。
+                        <br>
+                        技術を磨き、
+                        <br>
+                        サービスの「思い」や「使いやすや」を
+                        <br>
+                        「カタチ」に表現できる
+                        <br>
+                        エンジニアを目指しています。
+                    </p>
                 </div>
             </div>
-        </div>
-        <div id="portfolio-wrapper" class="wrapper">
-            <h2>PORTFOLIO</h2>
-            <p>作ったもの</p>
-            <div>comming soon...</div>
-        </div>
-        <div id="contact-wrapper" class="wrapper">
-            <h2>CONTACT</h2>
-            <p>お問い合わせ</p>
-            <div>
-                <p><a href="#">メールでのお問い合わせ</a></p>
-                <p><a href="#">tiwtter</a></p>
-                <p><a href="#">instagram</a></p>
+        </section>
+        <section>
+            <div id="about" class="wrapper">
+                <div class="title-content">
+                    <h2 class="title">ABOUT ME</h2>
+                    <p class="supplementary-title">私のこと</p>
+                </div>
+                <img src="/image/face.jpeg" alt="顔写真" class="image-content">
+                <h3>松尾　龍哉</h3>
+                <p>(まつお　りゅうや)</p>
+                <div class="about-message">
+                    <p>
+                        福岡県出身。2000年2月12日生まれ。
+                        <br>
+                        現在は、東京都で地方公務員として従事しております。
+                        <br>
+                        高校卒業後に上京し、初めてがいっぱいの生活で楽しく過ごしています。
+                        <br>
+                        終業後や休日にWeb制作について、学んでいます。
+                        <br>
+                        どうぞ、よろしくお願いいたします。
+                    </p>
+                </div>
             </div>
-
-            <!-- <form action="#">
-                <div>
-                    <p>お名前</p>
-                    <input type="text">
+        </section>
+        <section>
+            <div id="skills" class="wrapper">
+                <div class="title-content">
+                    <h2 class="title">SKILLS</h2>
+                    <p class="supplementary-title">出来ること</p>
                 </div>
-                <div>
-                    <p>メールアドレス</p>
-                    <input type="text">
+                <div class="skill-content">
+                    <div class="skill visual-1">
+                        <img src="/image/html5.svg" alt="html5" class="skill-icon">
+                    </div>
+                    <div class="skill visual-2">
+                        <img src="/image/css3.svg" alt="css3" class="skill-icon">
+                    </div>
+                    <div class="skill visual-1">
+                        <img src="/image/js.svg" alt="js" class="skill-icon">
+                    </div>
+                    <div class="skill visual-2">
+                        <img src="/image/vue.svg" alt="vue" class="skill-icon">
+                    </div>
+                    <div class="skill visual-1">
+                        <img src="/image/github.svg" alt="github" class="skill-icon">
+                    </div>
+                    <div class="skill visual-2">
+                        <img src="/image/ruby.svg" alt="ruby" class="skill-icon">
+                    </div>
                 </div>
-                <div>
-                    <p>内容</p>
-                    <textarea name="comments" id="comments"></textarea>
+            </div>
+        </section>
+        <section>
+            <div id="works" class="wrapper">
+                <div class="title-content">
+                    <h2 class="title">WORKS</h2>
+                    <p class="supplementary-title">制作物</p>
                 </div>
-                <div>
-                    <input type="submit">
+                <div class="work">
+                    <img src="/image/1.jpeg" alt="当サイト" class="image-content">
+                    <h3>当サイト</h3>
+                    <p>初めて作成したプロフィールサイトです。</p>
                 </div>
-            </form> -->
-        </div>
+                <div class="work">
+                    <img src="/image/2.jpeg" alt="当サイト" class="image-content">
+                    <h3>Qiita</h3>
+                    <p>勉強した内容をQiitaに投稿し、アウトプットしています。</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="contact" class="wrapper">
+                <div class="title-content">
+                    <h2 class="title">CONTACT</h2>
+                    <p class="supplementary-title-white">お気軽にお問い合わせください</p>
+                </div>
+                <p class="contact-message">
+                    現在、電話につきましては繋がりません。
+                    <br>
+                    tiwtterのDMよりお問い合わせください。
+                </p>
+                <div class="contact-content">
+                    <p><img src="/image/phone-alt.svg" alt="tell" class="contact-icon"><a href="#">080-0000-0000</a></p>
+                    <p><img src="/image/twitter.svg" alt="twitter" class="contact-icon"><a href="#">@yomi_DOIT</a></p>
+                </div>
+                <p class="contact-precautions">※お電話の受付時間 10 : 00 ~ 19 : 00（土日も対応可能）</p>
+            </div>
+        </section>
     </div>
 
     <!-- フッター -->
     <footer>
         <div class="footer wrapper">
-            <p><small>&copy; 2020 All Right Reserved.</small></p>
+            <p><small>&copy; 2020 RyuyaMatsuo All Right Reserved.</small></p>
         </div>
     </footer>
 

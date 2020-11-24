@@ -1,284 +1,318 @@
 @charset "UTF-8";
 body {
     margin: 0 auto;
-    color: #333333;
-    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    color: #2B2B2B;
+    /* font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; */
 }
 
 /* ヘッダー */
-#home {
-    background-image: url(../image/home.jpeg);
-    height: 600px;
-}
-
-.big-bg {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 header {
-    display: flex;
-    justify-content: flex-end;
-    height: 60px;
-}
-
-/* 🍔start */
-/* クリック前 */
-.nav-toggle {
-    display: block;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-}
-
-.nav-toggle i {
-    display: block;
-    width: 30px;
-    height: 1px;
-    background-color: #333333;
-    position: absolute;
-    transition: transform .5s, opacity .5s;
-}
-
-/* 二本線の容姿指定 */
-.nav-toggle i:nth-child(1) {
-    top: 20px;
-    right: 20px;
-}
-
-.nav-toggle i:nth-child(2) {
-    top: 0;
-    bottom: 0;
-    right: 20px;
-    margin: auto;
-}
-
-.nav-toggle i:nth-child(3) {
-    right: 20px;
-    bottom: 20px;
-}
-
-/* クリック後 show追加 */
-.nav-toggle.show {
-    position: fixed;
-    z-index: 10000;
-}
-.nav-toggle.show i:nth-child(1) {
-    transform: translateY(10px) rotate(-45deg);
-}
-
-.nav-toggle.show i:nth-child(2) {
-    opacity: 0;
-}
-
-.nav-toggle.show i:nth-child(3) {
-    transform: translateY(-10px) rotate(45deg);
-}
-
-/* クリック前メニューリスト */
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 20%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s, visibility .5s;
     text-align: center;
-    background-color: #FFFFFF;
+    height: 140px;
 }
 
-.nav ul {
-    text-decoration: none;
+header p {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 }
 
-.nav .nav-menu li {
-    display: block;
-    margin-bottom: 38px;
-    font-size: 25px;
-    cursor: pointer;
+header h1 {
+    font-size: 32px;
+    padding-bottom: 60px;
+    font-family: "Lora", serif;
 }
 
-.nav ul li a {
-    text-decoration: none;
-    color: #333333;
+.main-visual{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/image/main.jpeg);
+    margin-bottom: 70px;
 }
 
-/* .nav-sns {
-    display: flex;
-    justify-content: center;
-} */
-
-.nav-sns li {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
-    height: 30px;
-    width: 180px;
-    line-height: 30px;
-    border: 2px solid;
-    border-color: #333333;
-    border-radius: 9vw;
-    margin: 0 auto 20px auto;
+.main {
+    margin-top: 600px;
 }
-
-/* クリック後　show追加 */
-.nav.show {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-}
-/* 🍔end */
-
-.title {
-    margin-top: 20%;
-    margin-left: 33px;
-}
-
-#home h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-#home p {
-    font-size: 17px;
-}
-
-/* メイン */
 /* 共通 */
 .wrapper {
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
 }
 
-.wrapper h2 {
+.title-content {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.title {
     font-size: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 0.7rem;
+    font-family: "Lora", serif;
+}
+
+.supplementary-title {
+    font-size: 10px;
+    position: relative;
+    display: inline;
+    padding: 0 10px;
+    letter-spacing: 0.35rem;
+    font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
+}
+
+.supplementary-title::before,
+.supplementary-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background-color: #333333;
+}
+
+.supplementary-title::before {
+    left: -9px;
+}
+
+.supplementary-title::after {
+    right: -2px;
+}
+
+/* consept */
+#consept {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/image/consept.jpeg);
+}
+
+.consept-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
+.consept-message {
+    font-size: 12px;
+    width: 314px;
+    display: inline-block;
+    letter-spacing: 0.13rem;
+    font-size: 12px;
+    line-height: 2.3;
+}
+
+/* about me */
+#about {
+    background-color: #F4F3F2;
+    padding-bottom: 40px;
+}
+
+.image-content {
+    height: 180px;
+    width: 314px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    font-size: 24px;
     margin-bottom: 10px;
+    letter-spacing: 0.51rem;
+    font-weight: 600;
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
 }
 
-.wrapper > p {
-    font-size: 14px;
-    margin-bottom: 35px;
-}
-
-/* about */
-#about-wrapper {
-    background-color: #F2F9F8;
-}
-
-#about-wrapper img {
-    height: 170px;
-    width: 170px;
-    border: 2px solid;
-    border-color: #333333;
-    border-radius: 50%;
-    margin-bottom: 35px;
+/* spamで表示する */
+#about p {
+    font-size: 12px;
+    margin-bottom: 30px;
+    /* font-weight: 600; */
+    /* letter-spacing: 0.51rem; */
+    /* font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; */
 }
 
 .about-message p {
-    font-size: 16px;
+    font-size: 12px;
     display: inline-block;
-    width: 300px;
-    margin-bottom: 10px;
+    width: 314px;
     text-align: left;
+    color: #716b64;
+    letter-spacing: 0.055rem;
+    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 }
 
 /* skills */
-#skills-wrapper {
-    background-color: #F2F9F8;
+#skills {
+    padding-bottom: 40px;
 }
 
-.skills {
+.skill-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skill {
-    height: 170px;
-    width: 170px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-    background-color: #FFFFFF;
-    border: 2px solid;
-    border-color: #333333;
-    border-radius: 10%;
-}
-
-/* portfolio */
-#portfolio-wrapper {
-    background-color: #F2F9F8;
-}
-
-#portfolio-wrapper > div {
-    height: 160px;
-    width: 314px;
-    line-height: 160px;
-    background-color: #FFFFFF;
-    border: 2px solid;
+    height: 143px;
+    width: 143px;
+    border: 1px solid;
     border-color: #333333;
     border-radius: 10px;
-    margin: 0 auto;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 10px 15px 0 rgba(55, 67, 116, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.visual-1 {
+    background-color: #F4F3F2;
+}
+
+.visual-2 {
+    background-color: #E5DCD5;
+}
+
+.skill-icon {
+    height: 100px;
+    width: 100px;
+}
+
+/* works */
+#works {
+    background-color: #E5DCD5;
+    padding-bottom: 40px;
+}
+
+.work {
+    margin-bottom: 20px;
+
+}
+
+.work h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.12rem;
+    font-weight: 600;
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
+.work p {
+    font-size: 12px;
+    letter-spacing: 0.12rem;
+    display: inline-block;
+    width: 314px;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 }
 
 /* contact */
-#contact-wrapper {
-    background-color: #E9F3F1;
+#contact {
+    background-color: #3E3D3B;
+    padding-bottom: 40px;
 }
 
-/* #contact-wrapper form {
-    width: 202px;
-    margin: 0 auto;
+#contact .title-content {
+    color: #FFFFFF;
 }
 
-#contact-wrapper form p {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-    font-size: 14px;
+.supplementary-title-white {
+    font-size: 10px;
+    position: relative;
+    display: inline;
+    padding: 0 10px;
+    letter-spacing: 0.35rem;
+    font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
 }
 
-#contact-wrapper form input {
-    width: 100%;
-    margin-bottom: 10px;
+.supplementary-title-white::before,
+.supplementary-title-white::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
 }
 
-#contact-wrapper form textarea {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-} */
+.supplementary-title-white::before {
+    left: -9px;
+}
 
-#contact-wrapper div {
+.supplementary-title-white::after {
+    right: -2px;
+}
+
+.contact-message {
+    color: #eaeaea;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    width: 314px;
+    text-align: left;
+    margin-bottom: 30px;
+    letter-spacing: 0.115rem;
+    line-height: 2;
+    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.contact-content p {
     width: 314px;
     margin: 0 auto;
-}
-
-#contact-wrapper div p a {
+    font-size: 12px;
     display: block;
     cursor: pointer;
-    text-decoration: none;
-    color: #333333;
-    background-color: #FFFFFF;
+    background-color: #D7BFA3;
     padding: 19px 0;
-    margin-bottom: 30px;
-    border: 2px solid;
-    border-color: #333333;
-    border-radius: 9vw;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 }
+
+.contact-icon {
+    height: 13px;
+    width: 13px;
+    padding-right: 5px;
+}
+
+.contact-content p a {
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+.contact-precautions {
+    color: #ABABAB;
+    font-size: 10px;
+    display: inline-block;
+    width: 314px;
+    text-align: left;
+    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+
 
 /* フッター */
 .footer {
-    background-color: #E9F3F1;
-    padding-bottom: 30px;
-    font-size: 10px;
+    background-color: #4F4C49;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 9px;
     line-height: 10px;
+    letter-spacing: 0.06rem;
 }
 
 .footer > p {
+    color: #AEAEAE;
     margin: 0;
+    font-family: "Lora", serif;
 }
