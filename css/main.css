@@ -2,155 +2,140 @@
 body {
     margin: 0 auto;
     color: #2B2B2B;
-    /* font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; */
+}
+
+html {
+    font-size: 10px;
 }
 
 /* ヘッダー */
 header {
     text-align: center;
-    height: 140px;
-}
-
-header p {
-    font-size: 12px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    height: 7rem;
+    background-color: #ffffff;
 }
 
 header h1 {
-    font-size: 32px;
-    padding-bottom: 60px;
-    font-family: "Lora", serif;
+    font-size: 2rem;
+    padding-top: 2.5rem;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.1em;
 }
 
 .main-visual{
-    height: 600px;
+    background-image: url(/image/aaa.jpeg);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-image: url(/image/main.jpeg);
-    margin-bottom: 70px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.main {
-    margin-top: 600px;
+#main-visual-title {
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.08em;
+    padding-right: 1rem;
 }
+
+#main-visual-sub {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.08em;
+    padding-right: 1rem;
+}
+
 /* 共通 */
 .wrapper {
     text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 .title-content {
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
 }
 
 .title {
-    font-size: 30px;
-    margin-bottom: 5px;
-    letter-spacing: 0.7rem;
-    font-family: "Lora", serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.2em;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .supplementary-title {
-    font-size: 10px;
-    position: relative;
-    display: inline;
-    padding: 0 10px;
-    letter-spacing: 0.35rem;
-    font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .supplementary-title::before,
 .supplementary-title::after {
     content: '';
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    width: 10px;
-    height: 1px;
+    width: 1rem;
+    height: 0.1rem;
     background-color: #333333;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .supplementary-title::before {
-    left: -9px;
+    margin-right: 0.6rem;
 }
 
 .supplementary-title::after {
-    right: -2px;
+    margin-left: 0.6rem;
+}
+
+.font-style {
+    font-size: 1rem;
+}
+
+.back-white {
+    background-color: #F4F3F2;
 }
 
 /* consept */
-#consept {
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-image: url(/image/consept.jpeg);
-}
-
-.consept-title {
-    font-size: 24px;
-    margin-bottom: 30px;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-}
-
 .consept-message {
-    font-size: 12px;
-    width: 314px;
+    letter-spacing: 0.2em;
+    line-height: 3.6rem;
+    width: 31.4rem;
     display: inline-block;
-    letter-spacing: 0.13rem;
-    font-size: 12px;
-    line-height: 2.3;
 }
 
 /* about me */
-#about {
-    background-color: #F4F3F2;
-    padding-bottom: 40px;
-}
-
 .image-content {
-    height: 180px;
-    width: 314px;
-    border-radius: 10px;
+    height: 18rem;
+    width: 31.4rem;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
-#about h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    letter-spacing: 0.51rem;
-    font-weight: 600;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+.name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
 }
 
-/* spamで表示する */
-#about p {
-    font-size: 12px;
-    margin-bottom: 30px;
-    /* font-weight: 600; */
-    /* letter-spacing: 0.51rem; */
-    /* font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; */
-}
-
-.about-message p {
-    font-size: 12px;
+.about-message {
+    letter-spacing: 0.1em;
+    line-height: 1.8rem;
+    width: 31.4rem;
     display: inline-block;
-    width: 314px;
     text-align: left;
-    color: #716b64;
-    letter-spacing: 0.055rem;
-    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 }
 
 /* skills */
-#skills {
-    padding-bottom: 40px;
-}
-
 .skill-content {
     display: flex;
     flex-direction: row;
@@ -159,160 +144,77 @@ header h1 {
 }
 
 .skill {
-    height: 143px;
-    width: 143px;
-    border: 1px solid;
-    border-color: #333333;
-    border-radius: 10px;
-    backdrop-filter: blur(30px);
-    box-shadow: 0 10px 15px 0 rgba(55, 67, 116, 0.25);
+    height: 11.2rem;
+    width: 11.2rem;
+    border: 0.1rem solid;
+    border-color: #2B2B2B;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    margin: 3rem;
+    cursor: pointer;
 }
 
-.visual-1 {
-    background-color: #F4F3F2;
-}
-
-.visual-2 {
-    background-color: #E5DCD5;
+.skill:hover {
+    background-color: #eeedec;
+    transition: 1.0s;
 }
 
 .skill-icon {
-    height: 100px;
-    width: 100px;
+    height: 6.7rem;
+    width: 6.7rem;
 }
 
 /* works */
-#works {
-    background-color: #E5DCD5;
-    padding-bottom: 40px;
-}
-
 .work {
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
 
 }
 
 .work h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    letter-spacing: 0.12rem;
-    font-weight: 600;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .work p {
-    font-size: 12px;
-    letter-spacing: 0.12rem;
     display: inline-block;
-    width: 314px;
-    letter-spacing: 0.2rem;
-    font-weight: 500;
-    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    width: 31.4rem;
 }
 
 /* contact */
-#contact {
-    background-color: #3E3D3B;
-    padding-bottom: 40px;
-}
-
-#contact .title-content {
-    color: #FFFFFF;
-}
-
-.supplementary-title-white {
-    font-size: 10px;
-    position: relative;
-    display: inline;
-    padding: 0 10px;
-    letter-spacing: 0.35rem;
-    font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
-}
-
-.supplementary-title-white::before,
-.supplementary-title-white::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    width: 10px;
-    height: 1px;
-    background-color: #ffffff;
-}
-
-.supplementary-title-white::before {
-    left: -9px;
-}
-
-.supplementary-title-white::after {
-    right: -2px;
-}
-
 .contact-message {
-    color: #eaeaea;
-    font-size: 12px;
-    font-weight: 500;
     display: inline-block;
-    width: 314px;
-    text-align: left;
-    margin-bottom: 30px;
-    letter-spacing: 0.115rem;
-    line-height: 2;
-    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    width: 31.4rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.contact-content p {
-    width: 314px;
-    margin: 0 auto;
-    font-size: 12px;
-    display: block;
-    cursor: pointer;
-    background-color: #D7BFA3;
-    padding: 19px 0;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    letter-spacing: 0.2rem;
-    font-weight: 500;
-    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact-icon {
-    height: 13px;
-    width: 13px;
-    padding-right: 5px;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
 }
-
-.contact-content p a {
-    text-decoration: none;
-    color: #2B2B2B;
-}
-
-.contact-precautions {
-    color: #ABABAB;
-    font-size: 10px;
-    display: inline-block;
-    width: 314px;
-    text-align: left;
-    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
-}
-
 
 /* フッター */
 .footer {
-    background-color: #4F4C49;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    font-size: 9px;
-    line-height: 10px;
+    background-color: #EEEDEC;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
     letter-spacing: 0.06rem;
 }
 
 .footer > p {
-    color: #AEAEAE;
     margin: 0;
-    font-family: "Lora", serif;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
